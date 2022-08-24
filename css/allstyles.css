@@ -306,7 +306,7 @@ span {
 
 .small-box {
     width: 315px;
-    height: 330px;
+    height: 350px;
     border-radius: 8px;
     background-color: white;
     color: black;
@@ -333,6 +333,16 @@ span {
 
 .descripcion {
     margin: 20px 13px 20px 13px;
+}
+
+.vinculo {
+    text-decoration: underline;
+    color:#1c1c1c;
+}
+
+.wwcmed {
+    text-decoration: underline;
+    color:#FFB742
 }
 
 /*+++++++++End Main Experience+++++++++*/
