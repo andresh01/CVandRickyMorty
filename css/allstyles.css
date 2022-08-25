@@ -556,6 +556,73 @@ span {
 /*+++++++++++End Main Contact++++++++++++*/
 
 
+/*+++++++++++header rick and morty++++++++++++*/
+
+.headerRM {
+    display: flex;
+    background-color: #72C7D0;
+    padding: 20px 0px 20px 80px;
+}
+
+.headerRM h3 {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    color: #233160;
+    margin-right: 570px;
+}
+
+/* .headerRM button {
+    background-color: #D7F2F2;
+    
+} */
+
+.divMain {
+    display: flex;
+}
+
+.ulMain {
+    display: flex;
+    justify-content:space-around;
+    list-style-type: none;
+    background-color: #96c96a;
+    padding: 20px;
+}
+.textoRM {
+    padding: 90px 350px 90px 510px;
+    background: #72C7D0 ;
+}
+
+.colorButton {
+    color:#233160;
+
+    background: #D7F2F2; 
+    border: 2px solid #D7F2F2;
+    border-radius: 50px;
+    border-style: none;
+    margin: 15px 5px;
+    cursor:pointer;
+}
+
+/*+++++++++++End header rick and morty++++++++++++*/
+
+
+/*+++++++++++Main rick and morty++++++++++++*/
+
+/*+++++++++++End Main rick and morty++++++++++++*/
+
+/*+++++++Footer rick and morty+++*/
+#footerRM {
+
+    display: flex;
+    background-color:  #96c96a;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-left: 20px;
+    font-family: "Work Sans";
+}
+/*+++++++end Footer rick and morty+++*/
 
 /*++++ Light Mode+++++*/
 
