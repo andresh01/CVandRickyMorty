@@ -1,10 +1,7 @@
 
 
-
 const botonchange = document.getElementById("button");
-
 botonchange.addEventListener("click", cambio);
-
 function cambio() {
 
     let body = document.querySelector('.body')
@@ -24,10 +21,30 @@ function cambio() {
     cajaexperiencia.forEach(element => {
         element.classList.toggle('change-mode-small-box')
     });
+    
+    let vinculos = document.querySelectorAll('.vinculo')
+    vinculos.forEach(element => {
+        element.classList.toggle('change-mode-vinculo')
+    })
 
+    let imagenwwc = document.querySelectorAll('.logowwc')
+    imagenwwc.forEach(element => {
+        element.setAttribute('src','./img/WWCode_Medellin_White 1.png')
+    })
 
+    let logo = document.querySelector('.logo3')
+    logo.setAttribute('src', './img/logo.png')
 
+    let cajonChistes = document.querySelector('.cajonChiste')
+    cajonChistes.classList.toggle('change-mode-cajonChiste')
 
+    let Chiste = document.querySelector('.chiste1')
+    Chiste.classList.toggle('change-mode-chiste')
+
+    let respuesta = document.querySelector('.respuesta1')
+    respuesta.classList.toggle('change-mode-respuesta')
+
+    
 }
 
 
@@ -41,7 +58,7 @@ botton.addEventListener('click', chistesAleatorios)
 
 function chistesAleatorios() {
     const endPoint = 'https://api.dadjokes.io/api/random/joke';
-
+    
     fetch(endPoint)
         .then(response => response.json())
         .then(data => {
@@ -51,3 +68,6 @@ function chistesAleatorios() {
             document.getElementById("chiste").textContent = "Upss, Parece que no estamos de humor"
         })
 } 
+
+
+

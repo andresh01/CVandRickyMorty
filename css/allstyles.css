@@ -306,7 +306,7 @@ span {
 
 .small-box {
     width: 315px;
-    height: 350px;
+    height: 370px;
     border-radius: 8px;
     background-color: white;
     color: black;
@@ -318,8 +318,15 @@ span {
     justify-content: space-between;
 }
 
-.logo {
-    margin: 13px;
+.logowwc {
+    margin: 14px;
+    width: 80px;
+    height: 80px;
+}
+.logo3 {
+    margin: 14px;
+    width: 80px;
+    height: 80px;
 }
 
 .texto {
@@ -340,7 +347,7 @@ span {
     color:#1c1c1c;
 }
 
-.wwcmed {
+#wwcmed {
     text-decoration: underline;
     color:#FFB742
 }
@@ -362,9 +369,15 @@ span {
 }
 
 #container h4 {
-    color: #ffb742;
-    padding: 10px 15px;
+    color: #FFB742;
+    background-color:  #7b7b7b37;
     font-size: 20px;
+    border-radius: 50px;
+    width: 150px;
+    padding: 8px 0px 8px 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    
 }
 
 #container h1 {
@@ -424,15 +437,15 @@ span {
     text-align: center;
 }
 
-#cajonChiste {
+.cajonChiste {
     width: 400px;
     height: 350px;
-    background-color: white;
+    background-color:white;
     border-radius: 10px;
     margin: 0 auto;
 }
 
-#chiste {
+.chiste1 {
     display: flex;
     justify-content: center;
     color: black;
@@ -441,8 +454,7 @@ span {
     padding: 10px;
     word-wrap: break-word;
 }
-
-#respuesta {
+.respuesta1 {
     display: flex;
     justify-content: center;
     color: black;
@@ -588,26 +600,118 @@ span {
     background-color: #96c96a;
     padding: 20px;
 }
+
+.ulMain li {
+    cursor: pointer;
+}
 .textoRM {
-    padding: 90px 350px 90px 510px;
+    padding: 30px;
     background: #72C7D0 ;
+    color: #E5E5E5;
 }
 
-.colorButton {
-    color:#233160;
+.targets {
+    text-align: center;
+}
 
+.classButton {
+    color:#233160;
+    text-decoration: none;
     background: #D7F2F2; 
     border: 2px solid #D7F2F2;
     border-radius: 50px;
     border-style: none;
-    margin: 15px 5px;
+    padding: 5px 20px 5px 20px;
     cursor:pointer;
+    
 }
+
 
 /*+++++++++++End header rick and morty++++++++++++*/
 
 
 /*+++++++++++Main rick and morty++++++++++++*/
+.textInicio {
+    display: grid;
+    grid-template-columns:max-content;
+    color:white;
+    text-align: center;
+    margin: auto;
+    padding-left: 50px;
+    font-size: 30px;
+
+}
+
+.boxRM {
+    width: 210px;
+    height: 400px;
+    background-color:#D7F2F2;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.h1RM {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.p1 {
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+
+.p2 {
+    line-height: 22px;;
+}
+
+.divtextoRM {
+    padding-right: 180px;
+}
+
+.divName {
+    padding: 10px;
+    color: #233160;
+    font-size: 12px;
+    text-align: center;
+}
+
+.divGenero {
+    color: #D5FBA6;
+    background-color:#96C96A;
+    text-align: center;
+    margin: 10px 65px 10px 65px;
+    border-radius: 50px;
+}
+
+.divStatus {
+    color: #233160;
+    text-align: center;
+    margin: 20px 65px 20px 65px
+}
+
+.img {
+    width: 180px;
+    height: 230px;
+    border-radius: 10px;
+    margin-left: 15px;
+    
+}
+
+.targets {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    /* display: flex;
+    flex-flow: wrap;
+    gap: 10px; */
+    background-color:#72C7D0 ;
+    min-height: 300px;
+    
+}
+
+.ulMain li {
+    color:white;
+}
 
 /*+++++++++++End Main rick and morty++++++++++++*/
 
@@ -624,17 +728,21 @@ span {
 }
 /*+++++++end Footer rick and morty+++*/
 
+
+
+
+
 /*++++ Light Mode+++++*/
 
 .change-mode-body {
-    background-color: white;
+    background-color: #E5E5E5;
     font-family: 'Poppins';
     color: black;
 }
 
 .change-mode-size {
     font-size: 16px;
-    color: white;
+    color: #E5E5E5;
 }
 
 .change-mode-a {
@@ -644,9 +752,53 @@ span {
 
 .change-mode-small-box {
     width: 315px;
-    height: 330px;
+    height: 370px;
     border-radius: 8px;
     background-color:#212529;
-    color: white;
+    color: #E5E5E5;
     margin: 10px;
+}
+
+.change-mode-vinculo {
+    text-decoration: underline;
+    color: #E5E5E5;
+}
+
+
+.change-mode-cajonChiste {
+    width: 400px;
+    height: 350px;
+    background-color:#212529 ;
+    border-radius: 10px;
+    margin: 0 auto;
+
+}
+
+.change-mode-chiste {
+    display: flex;
+    justify-content: center;
+    color: #E5E5E5;
+    font-size: 20px;
+    font-family: 'Poppins';
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.change-mode-respuesta {
+    display: flex;
+    justify-content: center;
+    color: #E5E5E5;
+    font-size: 20px;
+    font-family: 'Poppins';
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+[data-content] {
+    display: none;
+}
+
+.active[data-content]{
+    display:block;
+
 }

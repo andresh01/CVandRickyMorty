@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/allstyles.css">
-    <title>Document</title>
+    <title>Rick & Morty</title>
 </head>
 
 <body>
@@ -21,21 +21,22 @@
             <h3>Another Joke about APIs?
                 Give it a REST. Let’s Rick!</h3>
         </div>
-        <div>
-            <button><a class="colorButton" href="./about.html">About Me</a></button>
-        </div>
+        
+        <button><a class="classButton" href="./index.html">About Me</a></button>
+        
     </header>
 
     <main>
         <div class="divMain">
             <img src="./img/rickymorty.png" alt="">
-            <div>
-                <h1>How Well Do You Know Rick & Morty?</h1>
-                <p>Rick and Morty is an American adult animated science-fiction sitcom created by Justin Roiland and Dan
+            <div class="divtextoRM">
+                <h1 class="h1RM">How Well Do You Know Rick & Morty?</h1>
+                <p class="p1">Rick and Morty is an American adult animated science-fiction sitcom created by Justin Roiland and Dan
                     Harmon for Cartoon Network's nighttime programming block Adult Swim. The series follows the
                     misadventures of cynical mad scientist Rick Sanchez and his good-hearted but fretful grandson Morty
                     Smith, who split their time between domestic life and interdimensional adventures.
-
+                </p>
+                <p class="p2">
                     Though you can enjoy Rick and Morty simply as a zany cartoon with some crude humor, you can also
                     dive
                     deeper into the human condition and wrestle with the existence of god itself through these
@@ -47,19 +48,27 @@
         <div>
             <nav>
                 <ul class="ulMain">
-                    <li> <a href=""></a> All Characters</li>
-                    <li> <a href=""></a> Females</li>
-                    <li> <a href=""></a> Males</li>
-                    <li> <a href=""></a> Alive</li>
-                    <li> <a href=""></a> Dead</li>
+                    <li  id="allc"> All Characters</li>
+                    <li  id="female"> Females</li>
+                    <li  id="male"> Males</li>
+                    <li  id="alive"> Alive</li>
+                    <li  id="dead"> Dead</li>
                 </ul>
             </nav>
         </div>
-        <div class="textoRM">
-            <p>
-                Choose any of the catergories above
-                and learn more about Rick and Morty characters.
-            </p>
+        <div  class="targets">
+            
+            <!-- <div class="boxRM">
+                    <div class="divName">
+                        <h2 id="name1">${personaje.name}</h2>
+                    </div>
+                    <div>
+                         <img class="img" id="imgRM1" src="${personaje.image}" alt="imagen">
+                     </div>
+                    <div class="divGenero">  ${personaje.gender}</div>
+                     <div class="divStatus">${personaje.status}</div>
+                </div>-->
+            
         </div>
     </main>
 
@@ -90,10 +99,12 @@
         </div>
         <div id="alinear-hire">
             <h4 class="center">Hire Me</h4>
-            <p>Enter your email to get my portafolio and CV</p>
+            <p>Visit my linkedin account!</p>
 
         </div>
     </footer>
+
+    <script src="./javascript/rickMorty.js"></script>
 </body>
 
 </html>
