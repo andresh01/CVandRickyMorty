@@ -98,7 +98,6 @@ function info(url) {
 }
 
 
-
 function borrar(){
     const padre = document.querySelector('.targets')
         const hijo = document.querySelector('.textInicio')

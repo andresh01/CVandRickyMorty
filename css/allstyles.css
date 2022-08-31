@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 .body {
@@ -8,10 +9,16 @@
     color: #ffffff;
 }
 
+.contenedorSuperior{
+    width: 100%;
+    max-width: 1280px;
+}
+
 /*+++++++++++header++++++++++++*/
 
 #header {
-    padding: 5px 49px 100px 49px;
+    padding: 2% 4% 12% 4%;
+    height: 20%;
     display: flex;
     justify-content: space-between;
 }
@@ -22,7 +29,7 @@
 }
 
 .ul {
-    margin: 25px 0 0 0;
+    margin: 8% 0 0 0;
     font-size: 18px;
     
 }
@@ -58,8 +65,8 @@ a {
     color: black;
     width: 80px;
     height: 40px;
-    left: 1271px;
-    top: 23.06px;
+    /* left: 1271px;
+    top: 23.06px; */
 
     background: #FFB742;
     border: 2px solid #FFB742;
@@ -74,12 +81,13 @@ a {
 
 /*+++++++++Footer++++++++++*/
 #footer {
+    width: 100%;
     display: flex;
     background-color: #1c1c1c;
     justify-content: space-around;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    padding-left: 20px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    /*padding-left: 2%;*/
     font-family: "Work Sans";
 }
 
@@ -87,7 +95,7 @@ a {
     display: block;
     color: #7c7c7c;
     font-size: 18px;
-    margin: 10px;
+    margin: 2%;
 }
 
 .color:link,
@@ -119,15 +127,15 @@ a {
     padding: 30px 0px 0px 20px;
 }
 
-.center {
-    width: 140px;
+/* .center {
+    width: 10%;
     padding-left: 0px;
-    color: white;
-}
+    color: white; 
+} */
 
 #alinear-link {
-    padding: 40px 0px 0px 100px;
-}
+    padding: 3% 0 0 6%;
+} 
 
 #footer ul {
     padding-left: 0px;
@@ -135,12 +143,12 @@ a {
 }
 
 #alinear-social {
-    padding: 40px 0px 0px 120px;
+    padding: 3% 0 0 6%;
 }
 
 #alinear-hire {
     width: 280px;
-    padding: 40px 0px 0px 120px;
+    padding: 3% 0 0 6%;
 }
 
 #footer h4 {
@@ -155,7 +163,7 @@ a {
 }
 
 #box-email {
-    height: 30px;
+    height: 50%;
     background-color: #212529;
     color: #7c7c7c;
     border-radius: 30px;
@@ -182,15 +190,17 @@ a {
 
 #main {
 
-    padding: 90px 383px 110px 382px;
-    justify-content: center;
+    /*padding: 90px 383px 110px 382px;
+    justify-content: center;*/
     font-family: 'Inter';
     text-align: center;
+    width: 100%;
 }
 
 #main img {
     border-radius: 200px;
     margin-top: 80px;
+    height: auto;
 }
 
 #nameyellow {
@@ -214,12 +224,16 @@ a {
     margin-top: 90px;
     padding: 0px 72px 0px 72px;
     justify-content: space-around;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .cajaMediana {
-    width: 416px;
-    height: 120px;
-    margin: 0px 24px 0px 24px;
+    /* width: 416px;
+    height: 120px; */
+    width: 100%;
+    
+    margin: 0 2% 0 2%;
     background-color: #292b2c;
     justify-content: space-between;
     font-family: 'Inter';
@@ -228,7 +242,7 @@ a {
 
 .numeros {
     color: #ffb742;
-    font-size: 32px;
+    font-size: 200%;
 }
 
 .alinearTexto {
@@ -242,7 +256,7 @@ span {
 }
 
 .espacioNumero {
-    margin: 25px 52px;
+    margin: 11% 5%;
     display: block;
     text-align: center;
 
@@ -251,7 +265,7 @@ span {
 .icono {
     width: 64px;
     height: 64px;
-    padding: 28px 30px;
+    padding: 12% 9%;
 }
 
 .size {
@@ -266,7 +280,7 @@ span {
 #section {
     display: flex;
     flex-direction: column;
-    margin-bottom: 110px;
+    margin-bottom: 10%;
 }
 
 .box2 {
@@ -306,11 +320,11 @@ span {
 
 .small-box {
     width: 315px;
-    height: 370px;
+    height: auto;
     border-radius: 8px;
     background-color: white;
     color: black;
-    margin: 10px;
+    margin: 2%;
 }
 
 .flex-smallbox {
@@ -330,7 +344,7 @@ span {
 }
 
 .texto {
-    margin: 13px 0px 0px 13px;
+    margin: 3% 0 0 3%;
 }
 
 .texto h3 {
@@ -361,11 +375,19 @@ span {
 }
 
 #sub-container {
-    padding: 110px 10px 70px 30px;
+    width: 50%;
+    padding: 9% 2% 3% 3%;
 }
 
 #image {
-    padding: 0px 30px 40px 30px;
+    padding: 0 3% 3% 3%;
+    width: 50%;
+    height: auto;
+}
+
+#image img {
+    width: 100%;
+    height: auto;
 }
 
 #container h4 {
@@ -373,8 +395,8 @@ span {
     background-color:  #7b7b7b37;
     font-size: 20px;
     border-radius: 50px;
-    width: 150px;
-    padding: 8px 0px 8px 0px;
+    width: 120px;
+    padding: 10px;
     margin-bottom: 20px;
     text-align: center;
     
@@ -396,8 +418,8 @@ span {
     color: black;
     width: 80px;
     height: 40px;
-    left: 1271px;
-    top: 23.06px;
+    /* left: 1271px;
+    top: 23.06px; */
 
     background: #FFB742;
     border: 2px solid #FFB742;
@@ -431,8 +453,8 @@ span {
 }
 
 #textoSmile {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2%;
+    margin-bottom: 3%;
     font-size: 40px;
     text-align: center;
 }
@@ -451,7 +473,7 @@ span {
     color: black;
     font-size: 20px;
     font-family: 'Poppins';
-    padding: 10px;
+    padding: 5%;
     word-wrap: break-word;
 }
 .respuesta1 {
@@ -460,7 +482,7 @@ span {
     color: black;
     font-size: 20px;
     font-family: 'Poppins';
-    padding: 10px;
+    padding: 6%;
     word-wrap: break-word;
 }
 
@@ -491,13 +513,13 @@ span {
 #casillas {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-
-    margin-top: 80px;
+    margin-top: 8%;
 }
 
 #name {
@@ -541,9 +563,8 @@ span {
 #button-send {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
-    margin-bottom: 160px;
-    position: relative;
+    margin-top: 4%;
+    margin-bottom: 4%;
     right: 220px;
 
 }
@@ -794,11 +815,126 @@ span {
     word-wrap: break-word;
 }
 
-[data-content] {
-    display: none;
+/* index */
+@media screen and (max-width:800px) {
+    
+    #caja-experiencia {
+        display: inline;
+        
+    }
+    .cajaMediana{
+        margin: 3%;
+        width: 50%;
+        
+    }
 }
 
-.active[data-content]{
-    display:block;
+@media screen and (max-width:400px) {
+    .contenedorSuperior{
+        width: 100%;
+        justify-content:end;
+    }
+    #caja-experiencia {
+        display: inline;
+        justify-content: center;
+        
+        
+    }
+    .cajaMediana{
+        margin-bottom: 3%;
+        width: 60%; 
+        margin-left: 19%;
+    }
+
+    #footer {
+        display: inline;
+        text-align:justify;
+    }
+
+    #alinear-nombre {
+        text-align: center;
+    }
+
+    .li {
+        margin: 1px auto;
+        padding-left: 3%;
+    }
+
+    .ul {
+        margin: 5% 0% 0% 3%;
+    }
+/* end index */
+
+/* about */
+    #container {
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #sub-container {
+        margin: 1px auto;
+    }
+
+    #image img {
+        width: 100%;
+        height: auto;
+    }
+
+    #image { 
+        margin: 1px auto;
+    }
+
+/* end about */
+
+/* experience */
+    #box {
+        display: block;  
+    }
+
+    .small-box {
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+/* end experience */
+
+/* contact */
+    .cajonChiste {
+        width: 80%;
+        height: auto;
+    }
+
+    #casillas {
+        width: 50%;
+    }
+
+    .form {
+        margin-top: 35%;
+        width: 50%;
+    }
+
+    #name {
+        width: 280%;
+        height: 50px;
+        font-size: 130%;
+    }
+    #email {
+        width: 280%;
+        height: 50px;
+        font-size: 130%;
+    }
+    #phone {
+        width: 280%;
+        height: 50px;
+        font-size: 130%;
+    }
+
+    #button-send {
+        margin-top: 1%;
+    }
+/* end contac */
 
 }
+
+
