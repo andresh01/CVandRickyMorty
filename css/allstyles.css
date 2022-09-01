@@ -594,7 +594,8 @@ span {
 .headerRM {
     display: flex;
     background-color: #72C7D0;
-    padding: 20px 0px 20px 80px;
+    padding: 2% 0% 2% 6%;
+    justify-content: space-between;
 }
 
 .headerRM h3 {
@@ -602,7 +603,7 @@ span {
     font-size: 20px;
     font-weight: 500;
     color: #233160;
-    margin-right: 570px;
+    
 }
 
 /* .headerRM button {
@@ -616,7 +617,7 @@ span {
 
 .ulMain {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     list-style-type: none;
     background-color: #96c96a;
     padding: 20px;
@@ -624,6 +625,7 @@ span {
 
 .ulMain li {
     cursor: pointer;
+    color:white;
 }
 .textoRM {
     padding: 30px;
@@ -644,6 +646,7 @@ span {
     border-style: none;
     padding: 5px 20px 5px 20px;
     cursor:pointer;
+    margin-right: 8%;
     
 }
 
@@ -665,15 +668,15 @@ span {
 
 .boxRM {
     width: 210px;
-    height: 400px;
+    height: 370px;
     background-color:#D7F2F2;
     margin: 20px;
     border-radius: 10px;
 }
 
 .h1RM {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 5%;
+    margin-bottom: 4%;
 }
 
 .p1 {
@@ -686,7 +689,7 @@ span {
 }
 
 .divtextoRM {
-    padding-right: 180px;
+    padding-right: 12%;
 }
 
 .divName {
@@ -714,7 +717,7 @@ span {
     width: 180px;
     height: 230px;
     border-radius: 10px;
-    margin-left: 15px;
+    
     
 }
 
@@ -729,9 +732,10 @@ span {
     min-height: 300px;
     
 }
-
-.ulMain li {
-    color:white;
+.imgRickyMorty {
+    width: 40%;
+    height: 40%;
+    
 }
 
 /*+++++++++++End Main rick and morty++++++++++++*/
@@ -742,9 +746,9 @@ span {
     display: flex;
     background-color:  #96c96a;
     justify-content: space-around;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    padding-left: 20px;
+    padding-bottom: 4%;
+    padding-top: 4%;
+    
     font-family: "Work Sans";
 }
 /*+++++++end Footer rick and morty+++*/
@@ -829,7 +833,7 @@ span {
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:640px) {
     .contenedorSuperior{
         width: 100%;
         justify-content:end;
@@ -935,6 +939,34 @@ span {
     }
 /* end contac */
 
+/* rick & morty*/
+    .divMain {
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .divtextoRM {
+        text-align: justify;
+        margin: 2%;
+    }
+
+    .targets {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    padding-top: 7%;
+    }
+
+    .boxRM {
+        margin: 1% auto;
+    }
+
+    .textInicio {
+        display: block;
+        margin: 1px auto;
+
+    }
 }
 
 
