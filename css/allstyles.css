@@ -967,6 +967,10 @@ span {
         margin: 1px auto;
 
     }
+
+    #footerRM {
+        width: 100%;
+    }
 }
 
 
