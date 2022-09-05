@@ -1,63 +1,74 @@
-let acu = 0;
-
-
-window.addEventListener('DOMContentLoaded', inicio);
-
-function inicio() {
-
-    const div = document.createRange().createContextualFragment(`
-                    <div class="textInicio">
-                        <div>
-                            Choose any of the catergories above
-                            and learn more about Rick and Morty characters.
-                        </div>
-                    </div>
-                 `);
-
-    const information = document.querySelector('.targets')
-    information.append(div);
-
-}
+var pagActual="";
 
 const female = document.getElementById('female');
 const male = document.getElementById('male');
 const allc = document.getElementById('allc');
 const alive = document.getElementById('alive');
 const dead = document.getElementById('dead');
+const next = document.querySelector('.next');
+const previous = document.querySelector('.previous');
+
+next.addEventListener('click', () => {
+    if (pagActual=="female") {   
+        info('Female', '', changePage('+'))       
+    } else if(pagActual=="male"){
+        info('Male', '', changePage('+'))
+    } else if(pagActual=="dead"){
+        info('', 'Dead', changePage('+'))
+    } else if(pagActual=="alive"){
+        info('', 'Alive', changePage('+'))
+    } else if(pagActual=="allc"){
+        info('', '', changePage('+'))
+    }   
+})
+
+previous.addEventListener('click', () => {
+    if (pagActual=="female") {
+        info('Female', '', changePage('-'))
+    } else if(pagActual=="male"){
+        info('Male', '', changePage('-'))
+    } else if(pagActual=="dead"){
+        info('', 'Dead', changePage('-'))
+    } else if(pagActual=="alive"){
+        info('', 'Alive', changePage('-'))
+    } else if(pagActual=="allc"){
+        info('', '', changePage('-'))
+    }   
+})
 
 
 
 female.addEventListener('click', function () {
-    
-    info('https://rickandmortyapi.com/api/character/?gender=Female');
-    borrar()
+    pagActual="female"
+    info('Female', '', '');
 });
 
 
 male.addEventListener('click', function () {
-    info('https://rickandmortyapi.com/api/character/?gender=Male');
-    borrar()
+    pagActual="male"
+    info('Male', '', '');  
 });
 
 alive.addEventListener('click', function () {
-    info('https://rickandmortyapi.com/api/character/?status=Alive');
-    borrar()
+    pagActual="alive"
+    info('', 'Alive', '');   
 });
 
 dead.addEventListener('click', function () {
-    info('https://rickandmortyapi.com/api/character/?status=Dead');
-    borrar()
+    pagActual="dead"
+    info('', 'Dead', '');   
 });
 
 allc.addEventListener('click', function () {
-    info('https://rickandmortyapi.com/api/character');
-    borrar()
+    pagActual="allc"
+    info('', '', '');  
 });
 
-function info(url) {
 
-    const api = url;
-
+function info(gender, status, changePage) {
+    
+    const api = `https://rickandmortyapi.com/api/character/?gender=${gender}&status=${status}&page=${changePage}`;
+    
     fetch(api)
         .then(response => response.json())
         .then(data => {
@@ -72,34 +83,42 @@ function info(url) {
                             <div>
                                 <img class="img" id="imgRM1" src="${personaje.image}" alt="imagen">
                             </div>
-                            <div class="divGenero">  ${personaje.gender}</div>
-                            <div class="divStatus">${personaje.status}</div>
+                            <h3 class="divGenero">  ${personaje.gender}</h3>
+                            <h3 class="divStatus">${personaje.status}</h3>
                         </div>
                     `);
 
                 const information = document.querySelector('.targets')
-                acu = acu + 1;
                 information.append(div);
             });
 
 
         }).catch(error => {
-            document.getElementById('name1').innerHTML = "Error de datos"
+            document.querySelector('.targets').innerHTML = `Error conectando con la API ${error}`
         })
 
-
-    for (let i = 0; i < acu; i++) {
-        const padre = document.querySelector('.targets')
-        const hijo = document.querySelector('.boxRM')
-        padre.removeChild(hijo)
-
-    }
+        removeCards();
 
 }
 
 
-function borrar(){
-    const padre = document.querySelector('.targets')
-        const hijo = document.querySelector('.textInicio')
-        padre.removeChild(hijo)
+function removeCards() {
+    const cards = document.querySelector('.targets').innerHTML = "";
 }
+
+
+let contPage=1;
+function changePage(operador) {
+        num=contPage;
+       
+        if (operador == '+') {
+            num = num + 1;
+            contPage = num;
+            return num 
+        } else if(operador == '-'){
+            num = num - 1;
+        contPage = num;
+        return num
+        } 
+}
+
