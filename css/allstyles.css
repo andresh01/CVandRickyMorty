@@ -9,7 +9,7 @@
     color: #ffffff;
 }
 
-.contenedorSuperior{
+.contenedorSuperior {
     width: 100%;
     max-width: 1280px;
 }
@@ -31,25 +31,20 @@
 .ul {
     margin: 8% 0 0 0;
     font-size: 18px;
-    
+
 }
 
 .li {
     display: inline;
     list-style-type: none;
     margin: 10px;
-   
+
 }
 
 a {
     text-decoration: none;
     color: white;
 }
-
-/* #header a:visited,
-#header a:link {
-    color: white;
-} */
 
 #header a:hover {
     color: #ffb742;
@@ -65,8 +60,6 @@ a {
     color: black;
     width: 80px;
     height: 40px;
-    /* left: 1271px;
-    top: 23.06px; */
 
     background: #FFB742;
     border: 2px solid #FFB742;
@@ -87,7 +80,6 @@ a {
     justify-content: space-around;
     padding-bottom: 5%;
     padding-top: 5%;
-    /*padding-left: 2%;*/
     font-family: "Work Sans";
 }
 
@@ -119,7 +111,6 @@ a {
     font-size: 16px;
     font-family: 'work Sans';
     color: #D4D4D4;
-
 }
 
 
@@ -127,15 +118,9 @@ a {
     padding: 30px 0px 0px 20px;
 }
 
-/* .center {
-    width: 10%;
-    padding-left: 0px;
-    color: white; 
-} */
-
 #alinear-link {
     padding: 3% 0 0 6%;
-} 
+}
 
 #footer ul {
     padding-left: 0px;
@@ -189,9 +174,6 @@ a {
 /*+++++++++Main index++++++++++*/
 
 #main {
-
-    /*padding: 90px 383px 110px 382px;
-    justify-content: center;*/
     font-family: 'Inter';
     text-align: center;
     width: 100%;
@@ -229,10 +211,7 @@ a {
 }
 
 .cajaMediana {
-    /* width: 416px;
-    height: 120px; */
     width: 100%;
-    
     margin: 0 2% 0 2%;
     background-color: #292b2c;
     justify-content: space-between;
@@ -247,7 +226,6 @@ a {
 
 .alinearTexto {
     display: flex;
-
 }
 
 span {
@@ -259,7 +237,6 @@ span {
     margin: 11% 5%;
     display: block;
     text-align: center;
-
 }
 
 .icono {
@@ -285,12 +262,11 @@ span {
 
 .box2 {
     text-align: center;
-
 }
 
 #exp h4 {
     color: #FFB742;
-    background-color:  #7b7b7b37;
+    background-color: #7b7b7b37;
     font-size: 20px;
     border-radius: 50px;
     width: 150px;
@@ -301,19 +277,16 @@ span {
 #exp {
     display: flex;
     justify-content: center;
-
 }
 
 .h2 {
     margin-bottom: 45px;
     font-family: 'Roboto';
     font-size: 25px;
-
 }
 
 
 #box {
-
     display: flex;
     justify-content: center;
 }
@@ -337,6 +310,7 @@ span {
     width: 80px;
     height: 80px;
 }
+
 .logo3 {
     margin: 14px;
     width: 80px;
@@ -358,12 +332,12 @@ span {
 
 .vinculo {
     text-decoration: underline;
-    color:#1c1c1c;
+    color: #FFB742;
 }
 
 #wwcmed {
     text-decoration: underline;
-    color:#FFB742
+    color: #FFB742;
 }
 
 /*+++++++++End Main Experience+++++++++*/
@@ -392,14 +366,13 @@ span {
 
 #container h4 {
     color: #FFB742;
-    background-color:  #7b7b7b37;
+    background-color: #7b7b7b37;
     font-size: 20px;
     border-radius: 50px;
     width: 120px;
     padding: 10px;
     margin-bottom: 20px;
     text-align: center;
-    
 }
 
 #container h1 {
@@ -418,8 +391,6 @@ span {
     color: black;
     width: 80px;
     height: 40px;
-    /* left: 1271px;
-    top: 23.06px; */
 
     background: #FFB742;
     border: 2px solid #FFB742;
@@ -462,7 +433,7 @@ span {
 .cajonChiste {
     width: 400px;
     height: 350px;
-    background-color:white;
+    background-color: white;
     border-radius: 10px;
     margin: 0 auto;
 }
@@ -476,6 +447,7 @@ span {
     padding: 5%;
     word-wrap: break-word;
 }
+
 .respuesta1 {
     display: flex;
     justify-content: center;
@@ -582,8 +554,8 @@ span {
     border-radius: 50px;
     border-style: none;
     margin: 15px 5px;
-    cursor:pointer;
-    
+    cursor: pointer;
+
 }
 
 /*+++++++++++End Main Contact++++++++++++*/
@@ -603,13 +575,8 @@ span {
     font-size: 20px;
     font-weight: 500;
     color: #233160;
-    
-}
 
-/* .headerRM button {
-    background-color: #D7F2F2;
-    
-} */
+}
 
 .divMain {
     display: flex;
@@ -617,7 +584,7 @@ span {
 
 .ulMain {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     list-style-type: none;
     background-color: #96c96a;
     padding: 20px;
@@ -625,11 +592,12 @@ span {
 
 .ulMain li {
     cursor: pointer;
-    color:white;
+    color: white;
 }
+
 .textoRM {
     padding: 30px;
-    background: #72C7D0 ;
+    background: #72C7D0;
     color: #E5E5E5;
 }
 
@@ -638,20 +606,19 @@ span {
 }
 
 .classButton {
-    color:#233160;
+    color: #233160;
     text-decoration: none;
-    background: #D7F2F2; 
+    background: #D7F2F2;
     border: 2px solid #D7F2F2;
     border-radius: 50px;
     border-style: none;
     padding: 5px 20px 5px 20px;
-    cursor:pointer;
+    cursor: pointer;
     margin-right: 8%;
-    
 }
 
 .classButton a {
-    color:#1c1c1c;
+    color: #1c1c1c;
 }
 
 
@@ -661,19 +628,18 @@ span {
 /*+++++++++++Main rick and morty++++++++++++*/
 .textInicio {
     display: grid;
-    grid-template-columns:max-content;
-    color:white;
+    grid-template-columns: max-content;
+    color: white;
     text-align: center;
     margin: auto;
     padding-left: 50px;
     font-size: 27px;
-
 }
 
 .boxRM {
-    width: 210px;
-    height: 370px;
-    background-color:#D7F2F2;
+    width: 83%;
+    height: 89%;
+    background-color: #D7F2F2;
     margin: 20px;
     border-radius: 10px;
 }
@@ -689,7 +655,8 @@ span {
 }
 
 .p2 {
-    line-height: 22px;;
+    line-height: 22px;
+    ;
 }
 
 .divtextoRM {
@@ -705,7 +672,7 @@ span {
 
 .divGenero {
     color: #D5FBA6;
-    background-color:#96C96A;
+    background-color: #96C96A;
     text-align: center;
     margin: 10px 65px 10px 65px;
     border-radius: 100px;
@@ -721,34 +688,34 @@ span {
     width: 180px;
     height: 230px;
     border-radius: 10px;
-    
-    
 }
 
 .targets {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    /* display: flex;
-    flex-flow: wrap;
-    gap: 10px; */
-    background-color:#72C7D0 ;
+
+    background-color: #72C7D0;
     min-height: 300px;
-    
 }
+
 .imgRickyMorty {
     width: 40%;
     height: 40%;
-    
+}
+/* contenedorbotones se crea con display none para que no aparezca cuando inicie la pagina */
+.contenedorbotones {
+    display: none;   
 }
 
-.contenedorbotones {
-    display:flex;
+/* Esta clase muestra los botones apenas se selecciona cualquier busqueda de tarjetas */
+.activeButtons {
+    display: flex;
     justify-content: space-between;
     background-color: #72C7D0;
-    
 }
-.contenedorbotones button{
+
+.contenedorbotones button {
     margin: 20px 30px;
     width: 77px;
     border-radius: 50px;
@@ -765,18 +732,46 @@ span {
 
 /*+++++++Footer rick and morty+++*/
 #footerRM {
-
+    color: #F5FBF2;
     display: flex;
-    background-color:  #96c96a;
+    background-color: #96c96a;
     justify-content: space-around;
     padding-bottom: 4%;
     padding-top: 4%;
-    
     font-family: "Work Sans";
 }
+
+
+
+.colorRM:link,
+.colorRM:visited {
+    color: #D5FAB6;
+}
+
+.colorRM:hover {
+    color: gray;
+}
+
+#textRM {
+    font-size: 18px;
+    font-family: 'work Sans';
+    color: #D5FAB6;
+}
+
+#alinear-hireRM p {
+    color: #D5FAB6;
+    margin-top: 7px;
+    margin-bottom: 60px;
+    line-height: 30px;
+    font-size: 17px;
+}
+
+#alinear-hireRM {
+    width: 280px;
+    padding: 3% 0 0 6%;
+}
+
 /*+++++++end Footer rick and morty+++*/
-
-
 
 
 
@@ -802,24 +797,23 @@ span {
     width: 315px;
     height: 370px;
     border-radius: 8px;
-    background-color:#212529;
+    background-color: #212529;
     color: #E5E5E5;
     margin: 10px;
 }
 
 .change-mode-vinculo {
     text-decoration: underline;
-    color: #E5E5E5;
+    color: #FFB742;
 }
 
 
 .change-mode-cajonChiste {
     width: 400px;
     height: 350px;
-    background-color:#212529 ;
+    background-color: #212529;
     border-radius: 10px;
     margin: 0 auto;
-
 }
 
 .change-mode-chiste {
@@ -842,40 +836,44 @@ span {
     word-wrap: break-word;
 }
 
+.change-mode-logowwc{
+    content: url("../img/WWCode_Medellin_White\ 1.png")
+}
+
 /* index */
 @media screen and (max-width:800px) {
-    
+
     #caja-experiencia {
         display: inline;
-        
     }
-    .cajaMediana{
+
+    .cajaMediana {
         margin: 3%;
         width: 50%;
-        
     }
 }
 
+/* Responsive celulares */
 @media screen and (max-width:640px) {
-    .contenedorSuperior{
+    .contenedorSuperior {
         width: 100%;
-        justify-content:end;
+        justify-content: end;
     }
+
     #caja-experiencia {
         display: inline;
         justify-content: center;
-        
-        
     }
-    .cajaMediana{
+
+    .cajaMediana {
         margin-bottom: 3%;
-        width: 60%; 
+        width: 60%;
         margin-left: 19%;
     }
 
     #footer {
         display: inline;
-        text-align:justify;
+        text-align: justify;
     }
 
     #alinear-nombre {
@@ -890,9 +888,10 @@ span {
     .ul {
         margin: 5% 0% 0% 3%;
     }
-/* end index */
 
-/* about */
+    /* end index */
+
+    /* about */
     #container {
         display: block;
         justify-content: center;
@@ -908,15 +907,15 @@ span {
         height: auto;
     }
 
-    #image { 
+    #image {
         margin: 1px auto;
     }
 
-/* end about */
+    /* end about */
 
-/* experience */
+    /* experience */
     #box {
-        display: block;  
+        display: block;
     }
 
     .small-box {
@@ -924,9 +923,10 @@ span {
         height: auto;
         margin: auto;
     }
-/* end experience */
 
-/* contact */
+    /* end experience */
+
+    /* contact */
     .cajonChiste {
         width: 80%;
         height: auto;
@@ -946,11 +946,13 @@ span {
         height: 50px;
         font-size: 130%;
     }
+
     #email {
         width: 280%;
         height: 50px;
         font-size: 130%;
     }
+
     #phone {
         width: 280%;
         height: 50px;
@@ -960,57 +962,100 @@ span {
     #button-send {
         margin-top: 1%;
     }
-/* end contac */
 
-/* rick & morty*/
+    /* end contact */
+
+    /* rick & morty*/
+
+    .classButton {
+        color: #233160;
+        text-decoration: none;
+        background: #D7F2F2;
+        border: 2px solid #D7F2F2;
+        border-radius: 50px;
+        border-style: none;
+        padding: 5px 20px 5px 20px;
+        cursor: pointer;
+        margin-right: 4%;
+    }
+
+    .imgRickyMorty {
+        width: 60%;
+        height: 40%;
+        margin-top: 25px;
+    }
+    
     .divMain {
         display: block;
         justify-content: center;
         text-align: center;
     }
 
+    .divName {
+        padding: 10%;
+        color: #233160;
+        font-size: 6px;
+        text-align: center;
+    }
+
     .divtextoRM {
         text-align: justify;
-        margin: 2%;
+        margin: auto 2%;
+        padding: 4%;
     }
 
     .targets {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    gap: 20px;
-    padding-top: 7%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 1%;
+        background-color: #72C7D0;
     }
 
     .boxRM {
-        margin: 1% auto;
+        width: 20%;
+        height: 133px;
     }
 
     .textInicio {
         display: block;
-        margin: 1px auto;
+        margin: 62px;
+        text-align: center;
+        padding: 4px;
+    }
 
+    .divGenero {
+        color: #D5FBA6;
+        background-color: #96C96A;
+        text-align: center;
+        margin: 1px auto;
+        border-radius: 50px;
+        font-size: 51%;
+        width: 57%;
+    }
+
+    .divStatus {
+        color: #233160;
+        text-align: center;
+        margin: 2px auto;
+        font-size: 52%;
+    }
+
+    .img {
+        width: 90%;
+        height: 70%;
+        border-radius: 10px;
     }
 
     #footerRM {
+        display: block;
         width: 100%;
+        color: #F5FBF2;
+        background-color: #96c96a;
+        justify-content: space-around;
+        padding-bottom: 4%;
+        padding-top: 4%;
+        font-family: "Work Sans";
     }
 
-    
-
-    /* .img {
-        width: 100px;
-        height: 100px;
-        border-radius: 10px;
-    } */
-
-    /* .boxRM {
-        width: 150px;
-        height: 150px;
-        background-color:#D7F2F2;
-        margin: 20px;
-        border-radius: 10px;
-        font-size: 8px;
-    } */
 }
-
-

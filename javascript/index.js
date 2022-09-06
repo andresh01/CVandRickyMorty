@@ -29,7 +29,7 @@ function cambio() {
 
     let imagenwwc = document.querySelectorAll('.logowwc')
     imagenwwc.forEach(element => {
-        element.setAttribute('src','./img/WWCode_Medellin_White 1.png')
+        element.classList.toggle('change-mode-logowwc')
     })
 
     let logo = document.querySelector('.logo3')

@@ -1,5 +1,7 @@
-var pagActual="";
+var pagActual = ""; //variable global para saber la busqueda que actualmente se esta realizando
+let contPage = 1; //variable global para inicializar la funcion de incremento de paginas
 
+//obtencion de los elementos nav del html
 const female = document.getElementById('female');
 const male = document.getElementById('male');
 const allc = document.getElementById('allc');
@@ -8,67 +10,77 @@ const dead = document.getElementById('dead');
 const next = document.querySelector('.next');
 const previous = document.querySelector('.previous');
 
+//evento que escucha cuando se oprime el boton next y envia el jquery a la funcion info()
+//el + es un parametro para que la funcion changePage sepa que tiene que aumentar las paginas
 next.addEventListener('click', () => {
-    if (pagActual=="female") {   
-        info('Female', '', changePage('+'))       
-    } else if(pagActual=="male"){
+    if (pagActual == "female") {
+        info('Female', '', changePage('+'))
+    } else if (pagActual == "male") {
         info('Male', '', changePage('+'))
-    } else if(pagActual=="dead"){
+    } else if (pagActual == "dead") {
         info('', 'Dead', changePage('+'))
-    } else if(pagActual=="alive"){
+    } else if (pagActual == "alive") {
         info('', 'Alive', changePage('+'))
-    } else if(pagActual=="allc"){
+    } else if (pagActual == "allc") {
         info('', '', changePage('+'))
-    }   
+    }
 })
 
+//evento que escucha cuando se oprime el boton previous y envia el jquery a la funcion info()
+//el - es un parametro para que la funcion changePage sepa que tiene que disminuir las paginas
 previous.addEventListener('click', () => {
-    if (pagActual=="female") {
+    if (pagActual == "female") {
         info('Female', '', changePage('-'))
-    } else if(pagActual=="male"){
+    } else if (pagActual == "male") {
         info('Male', '', changePage('-'))
-    } else if(pagActual=="dead"){
+    } else if (pagActual == "dead") {
         info('', 'Dead', changePage('-'))
-    } else if(pagActual=="alive"){
+    } else if (pagActual == "alive") {
         info('', 'Alive', changePage('-'))
-    } else if(pagActual=="allc"){
+    } else if (pagActual == "allc") {
         info('', '', changePage('-'))
-    }   
+    }
 })
 
 
-
+//Evento que escucha cuando se oprime el boton de busqueda.
+//Se le asigna el valor a la variable pagActual dependiando el boton de busqueda seleccionado 
 female.addEventListener('click', function () {
-    pagActual="female"
+    pagActual = "female"
+    contPage = 1;
     info('Female', '', '');
 });
 
 
 male.addEventListener('click', function () {
-    pagActual="male"
-    info('Male', '', '');  
+    pagActual = "male"
+    contPage = 1;
+    info('Male', '', '');
 });
 
 alive.addEventListener('click', function () {
-    pagActual="alive"
-    info('', 'Alive', '');   
+    pagActual = "alive"
+    contPage = 1;
+    info('', 'Alive', '');
 });
 
 dead.addEventListener('click', function () {
-    pagActual="dead"
-    info('', 'Dead', '');   
+    pagActual = "dead"
+    contPage = 1;
+    info('', 'Dead', '');
 });
 
 allc.addEventListener('click', function () {
-    pagActual="allc"
-    info('', '', '');  
+    pagActual = "allc"
+    contPage = 1;
+    info('', '', '');
 });
 
-
+//funcion para consumir la API e insertar los datos al HTML
 function info(gender, status, changePage) {
     
     const api = `https://rickandmortyapi.com/api/character/?gender=${gender}&status=${status}&page=${changePage}`;
-    
+
     fetch(api)
         .then(response => response.json())
         .then(data => {
@@ -96,9 +108,10 @@ function info(gender, status, changePage) {
         }).catch(error => {
             document.querySelector('.targets').innerHTML = `Error conectando con la API ${error}`
         })
-
-        removeCards();
-
+        
+    removeCards(); //borra las cartas anteriores
+    let buttons = document.querySelector('.contenedorbotones')
+    buttons.classList.add('activeButtons')
 }
 
 
@@ -107,18 +120,20 @@ function removeCards() {
 }
 
 
-let contPage=1;
+
+//Funcion que se encarga de incrementar o decrementar las paginas segun el parametro que le pase
 function changePage(operador) {
-        num=contPage;
-       
-        if (operador == '+') {
-            num = num + 1;
-            contPage = num;
-            return num 
-        } else if(operador == '-'){
-            num = num - 1;
+    num = contPage;
+
+    if (operador == '+') {
+        num = num + 1;
         contPage = num;
         return num
-        } 
+    } else if (operador == '-') {
+        if (num <= 1) { num = 2;} //condicional para que el valor del contador no se dismunuya mas de 2 cuando se oprime previous 
+        num = num - 1;
+        contPage = num;
+        return num
+    }
 }
 
