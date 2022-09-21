@@ -7,11 +7,12 @@
     background-color: #212529;
     font-family: 'Poppins';
     color: #ffffff;
+    max-width: 100%;
 }
 
 .contenedorSuperior {
     width: 100%;
-    max-width: 1280px;
+    max-width: 100%;
 }
 
 /*+++++++++++header++++++++++++*/
@@ -138,6 +139,7 @@ a {
 
 #footer h4 {
     font-size: 21px;
+    color:#D4D4D4;
 }
 
 #alinear-hire p {
@@ -632,7 +634,7 @@ span {
     color: white;
     text-align: center;
     margin: auto;
-    padding-left: 50px;
+    /* padding-left: 50%; */
     font-size: 27px;
 }
 
@@ -767,24 +769,23 @@ span {
 }
 
 #alinear-hireRM {
-    width: 280px;
+    /* width: 280px; */
     padding: 3% 0 0 6%;
 }
 
 /*+++++++end Footer rick and morty+++*/
 
 
-
 /*++++ Light Mode+++++*/
 
 .change-mode-body {
     background-color: #E5E5E5;
-    font-family: 'Poppins';
+    /* font-family: 'Poppins'; */
     color: black;
 }
 
 .change-mode-size {
-    font-size: 16px;
+    /* font-size: 16px; */
     color: #E5E5E5;
 }
 
@@ -794,12 +795,8 @@ span {
 }
 
 .change-mode-small-box {
-    width: 315px;
-    height: 370px;
-    border-radius: 8px;
     background-color: #212529;
     color: #E5E5E5;
-    margin: 10px;
 }
 
 .change-mode-vinculo {
@@ -809,11 +806,11 @@ span {
 
 
 .change-mode-cajonChiste {
-    width: 400px;
-    height: 350px;
+    /* width: 400px;
+    height: 350px; */
     background-color: #212529;
-    border-radius: 10px;
-    margin: 0 auto;
+    /* border-radius: 10px;
+    margin: 0 auto; */
 }
 
 .change-mode-chiste {
