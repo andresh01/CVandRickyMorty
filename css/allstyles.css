@@ -330,6 +330,7 @@ span {
 
 .descripcion {
     margin: 20px 13px 20px 13px;
+    padding-bottom: 23px;
 }
 
 .vinculo {
@@ -438,6 +439,7 @@ span {
     background-color: white;
     border-radius: 10px;
     margin: 0 auto;
+    word-wrap: break-word;
 }
 
 .chiste1 {
@@ -494,6 +496,7 @@ span {
     display: flex;
     flex-direction: column;
     margin-top: 8%;
+    
 }
 
 #name {
@@ -505,7 +508,6 @@ span {
     border: none;
     border-bottom: 1px solid #676767;
     outline: none;
-
 }
 
 #email {
@@ -837,6 +839,7 @@ span {
     content: url("../img/WWCode_Medellin_White\ 1.png")
 }
 
+
 /* index */
 @media screen and (max-width:800px) {
 
@@ -892,7 +895,7 @@ span {
     #container {
         display: block;
         justify-content: center;
-        text-align: center;
+        text-align: justify;
     }
 
     #sub-container {

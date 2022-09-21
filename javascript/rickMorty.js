@@ -13,7 +13,7 @@ const next = document.querySelector('.next');
 const previous = document.querySelector('.previous');
 
 //evento que escucha cuando se oprime el boton next y envia el jquery a la funcion info()
-//el + es un parametro para que la funcion changePage sepa que tiene que aumentar las paginas
+//el contPage suma paginas hasta la cantidad que le indique pages
 next.addEventListener('click', () => {
     if(contPage < pages){
     contPage = contPage+1;
@@ -33,7 +33,6 @@ next.addEventListener('click', () => {
 })
 
 //evento que escucha cuando se oprime el boton previous y envia el jquery a la funcion info()
-//el - es un parametro para que la funcion changePage sepa que tiene que disminuir las paginas
 previous.addEventListener('click', () => {
     
     if (contPage <= 1) { contPage = 2;}
@@ -54,10 +53,10 @@ previous.addEventListener('click', () => {
 
 
 //Evento que escucha cuando se oprime el boton de busqueda.
-//Se le asigna el valor a la variable pagActual dependiando el boton de busqueda seleccionado 
+//Se le asigna el valor a la variable pagActual dependiendo el boton de busqueda seleccionado 
 female.addEventListener('click', function () {
-    pagActual = "female"
-    contPage = 1;
+    pagActual = "female" //asigna el valor a la var pagactual con la pagina que esta mostrando en el momento
+    contPage = 1; //Resetea el contador de paginas
     info('Female', '', '');
 });
 
