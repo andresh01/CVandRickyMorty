@@ -1,7 +1,5 @@
-
-var pagActual = ""; //variable global para saber la busqueda que actualmente se esta realizando
-let contPage = 1; //variable global para inicializar la funcion de incremento de paginas
-let pages; //variable para saber cuantas paginas trae cada busqueda
+let nextPag; //variable donde se almacena la url de la proxima pagina
+let previousPag; //variable donde se almacena la url de la pagina anterior
 
 //obtencion de los elementos nav del html
 const female = document.getElementById('female');
@@ -13,92 +11,55 @@ const next = document.querySelector('.next');
 const previous = document.querySelector('.previous');
 
 //evento que escucha cuando se oprime el boton next y envia el jquery a la funcion info()
-//el contPage suma paginas hasta la cantidad que le indique pages
+//realiza la validacion si hay siguiente pagina o no
 next.addEventListener('click', () => {
-    if(contPage < pages){
-    contPage = contPage+1;
-    } 
-    
-    if (pagActual == "female") {
-        info('Female', '', contPage)
-    } else if (pagActual == "male") {
-        info('Male', '', contPage)
-    } else if (pagActual == "dead") {
-        info('', 'Dead', contPage)
-    } else if (pagActual == "alive") {
-        info('', 'Alive', contPage)
-    } else if (pagActual == "allc") {
-        info('', '', contPage)
+    if (nextPag != null) {
+        info(nextPag);
     }
 })
 
 //evento que escucha cuando se oprime el boton previous y envia el jquery a la funcion info()
+//realiza la validacion si hay pagina anterior o no
 previous.addEventListener('click', () => {
-    
-    if (contPage <= 1) { contPage = 2;}
-        contPage = contPage-1;
-    
-    if (pagActual == "female") {
-        info('Female', '', contPage)
-    } else if (pagActual == "male") {
-        info('Male', '', contPage)
-    } else if (pagActual == "dead") {
-        info('', 'Dead', contPage)
-    } else if (pagActual == "alive") {
-        info('', 'Alive', contPage)
-    } else if (pagActual == "allc") {
-        info('', '', contPage)
+    if (previousPag != null) {
+        info(previousPag)
     }
 })
 
-
-//Evento que escucha cuando se oprime el boton de busqueda.
-//Se le asigna el valor a la variable pagActual dependiendo el boton de busqueda seleccionado 
+//Evento que escucha cuando se oprime el boton de busqueda 
 female.addEventListener('click', function () {
-    pagActual = "female" //asigna el valor a la var pagactual con la pagina que esta mostrando en el momento
-    contPage = 1; //Resetea el contador de paginas
-    info('Female', '', '');
+    info('https://rickandmortyapi.com/api/character/?gender=Female');
 });
 
-
 male.addEventListener('click', function () {
-    pagActual = "male"
-    contPage = 1;
-    info('Male', '', '');
+    info('https://rickandmortyapi.com/api/character/?gender=Male');
 });
 
 alive.addEventListener('click', function () {
-    pagActual = "alive"
-    contPage = 1;
-    info('', 'Alive', '');
+    info('https://rickandmortyapi.com/api/character/?status=Alive');
 });
 
 dead.addEventListener('click', function () {
-    pagActual = "dead"
-    contPage = 1;
-    info('', 'Dead', '');
+    info('https://rickandmortyapi.com/api/character/?status=Dead');
 });
 
 allc.addEventListener('click', function () {
-    pagActual = "allc"
-    contPage = 1;
-    info('', '', '');
+    info('https://rickandmortyapi.com/api/character/');
 });
 
 //funcion para consumir la API e insertar los datos al HTML
-function info(gender, status, changePage) {
-    
-    const api = `https://rickandmortyapi.com/api/character/?gender=${gender}&status=${status}&page=${changePage}`;
+function info(url) {
 
-    fetch(api)
-   
+    fetch(url)
+
         .then(response => response.json())
         .then(data => {
-            
-            pages = data.info.pages; //trae la cantidad de paginas que tiene cada busqueda para saber hasta donde se hace el next
+
+            nextPag = data.info.next; //obtiene la url de la proxima pagina 
+            previousPag = data.info.prev;
 
             data.results.forEach(personaje => {
-               
+
                 const div = document.createRange().createContextualFragment(`
                         <div class="boxRM">
                             <div class="divName">
@@ -113,14 +74,14 @@ function info(gender, status, changePage) {
                     `);
 
                 const information = document.querySelector('.targets')
-                information.append(div);
+                information.append(div); //inserta los nodos contenicod en la variable div al html
             });
 
 
         }).catch(error => {
             document.querySelector('.targets').innerHTML = `Error conectando con la API ${error}`
         })
-        
+
     removeCards(); //borra las cartas anteriores
     //Activa los botones next y previous cuando se elije los personajes
     let buttons = document.querySelector('.contenedorbotones')
