@@ -605,9 +605,6 @@ span {
     color: #E5E5E5;
 }
 
-.targets {
-    text-align: center;
-}
 
 .classButton {
     color: #233160;
@@ -632,20 +629,24 @@ span {
 /*+++++++++++Main rick and morty++++++++++++*/
 .textInicio {
     display: grid;
-    grid-template-columns: max-content;
+    grid-column-start: 1;
+    grid-column-end: 5;
     color: white;
     text-align: center;
+    align-items: center;
     margin: auto;
-    /* padding-left: 50%; */
     font-size: 27px;
+    height: 200px;
+    padding-bottom: 30px;
 }
 
 .boxRM {
-    width: 83%;
-    height: 89%;
+    text-align: center;
+    width: 100%;
+    height: auto;
     background-color: #D7F2F2;
-    margin: 20px;
     border-radius: 10px;
+    
 }
 
 .h1RM {
@@ -689,18 +690,20 @@ span {
 }
 
 .img {
-    width: 180px;
-    height: 230px;
+    width: 80%;
+    height: 80%;
     border-radius: 10px;
 }
 
 .targets {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-
+    justify-content: center;
+    grid-template-columns: repeat(4, 20%);
+    column-gap: 30px;
+    row-gap: 30px;
+    padding-top: 30px;
     background-color: #72C7D0;
-    min-height: 300px;
+    /* min-height: 300px */;
 }
 
 .imgRickyMorty {
@@ -1005,16 +1008,18 @@ span {
     }
 
     .targets {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        gap: 1%;
+        display: grid;
+        
+        grid-template-columns: 25% 25% 25%;
+        column-gap: 10px;
+        row-gap: 10px;
         background-color: #72C7D0;
     }
 
+
     .boxRM {
-        width: 20%;
-        height: 133px;
+        width: 100%;
+        height: auto;
     }
 
     .textInicio {
